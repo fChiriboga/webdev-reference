@@ -1,0 +1,55 @@
+Common HTML tags that beginners can use to create basic webpages
+<!--comments can be made like this in HTML-->
+/*and like this in CSS style sheets*/
+
+Headers: Provides titles and headers where the styles are different from the rest of the text on the page. 
+<h1></h1>  //Most important heading element
+<h2></h2>  //Second most important
+<h3></h3>  /Third most important
+<h4></h4>  //Fourth most important
+<h5></h5>  //Fifth most important
+<h6></h6>  //Sixth most important
+
+Paragraphs and their style options
+<p></p>             //creates a paragraph 
+<em></em>           //italicizes a word or words within the tags
+<strong></strong>   //makes a word or words bold within the tags
+*<mark></mark>      //highlights a word or words 
+<span>/span>        //an inline level element that can group elements together using * class="" * or an * id="" *
+<a></a>             //creates a clickable link
+
+Separating content
+There are certain keywords that are used to help separate the content of a webpage to make it easier to read.
+<header></header>
+<body></body>
+<nav></nav>
+<main></main>
+<section></section>  //used to help separate parts of a page but should only be used if there isn't a more specific element that can be used
+
+<form></form>        //used to get information from a user
+
+Void elements: these will have an opening tag but no closing tag
+<img>
+
+Image elements and attributes:
+<img src="">    //src specifies where an image is located, whether that be in a file location or a URL
+<img src="" alt="">  //alt is used for alternative text when an image fails to load or for screen reader accessibility
+<figure> <img src=""> </figure>    //self-contained content that's associated with an image
+<figure> <img src=""> <figcaption></figcaption> </figure>         //a caption to describe an image or provide context. Must always be in a <figure> element and can only be the first or last child
+
+Links and thheir attributes
+<a href="">text can be added here</a>  //an anchor tag that will link to other pages or websites
+<a href="" target=""></a>              //target will allow the link to open to a new tab
+<a href=""> <img src=""> </a>          //images can also become links
+
+Types of lists
+Ordered lists
+<ol>
+  <li></li>
+  <li></li>
+</ol>
+Unordered lists
+<ul>
+  <li></li>
+  <li></li>
+</ul>
