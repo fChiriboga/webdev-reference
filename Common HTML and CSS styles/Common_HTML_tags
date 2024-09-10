@@ -2,6 +2,10 @@ Common HTML tags that beginners can use to create basic webpages
 <!--comments can be made like this in HTML-->
 /*and like this in CSS style sheets*/
 
+<!DOCTYPE html>  //declares and ensures that the browser uses the latest version of HTML
+<html></html>  //
+<html lang="en"></html>  //specifies the language of the webpage. In this case, English
+
 Headers: Provides titles and headers where the styles are different from the rest of the text on the page. 
 <h1></h1>  //Most important heading element
 <h2></h2>  //Second most important
@@ -14,22 +18,23 @@ Paragraphs and their style options
 <p></p>             //creates a paragraph 
 <em></em>           //italicizes a word or words within the tags
 <strong></strong>   //makes a word or words bold within the tags
-*<mark></mark>      //highlights a word or words 
-<span>/span>        //an inline level element that can group elements together using * class="" * or an * id="" *
 <a></a>             //creates a clickable link
 
 Separating content
-There are certain keywords that are used to help separate the content of a webpage to make it easier to read.
+Certain keywords are used to help separate the content of a webpage to make it easier to read.
+Head:
+<head></head>  //contains metadata about the webpage
+<head><title>text</title></head>  //text will show in the tab of the webpage
+<head><meta charset="utf-8"></head>  //metadata that declares character encoding
 <header></header>
 <body></body>
-<nav></nav>
 <main></main>
 <section></section>  //used to help separate parts of a page but should only be used if there isn't a more specific element that can be used
-
-<form></form>        //used to get information from a user
+<footer></footer>
 
 Void elements: these will have an opening tag but no closing tag
-<img>
+<img>  //tag to add an image
+<input>  //allows you to collect data from a web form
 
 Image elements and attributes:
 <img src="">    //src specifies where an image is located, whether that be in a file location or a URL
@@ -37,7 +42,32 @@ Image elements and attributes:
 <figure> <img src=""> </figure>    //self-contained content that's associated with an image
 <figure> <img src=""> <figcaption></figcaption> </figure>         //a caption to describe an image or provide context. Must always be in a <figure> element and can only be the first or last child
 
-Links and thheir attributes
+Form elements and other related elements
+<form></form>        //used to get information from a user
+<form action=""></form>  
+<form><label><input></label></form>  //caption for an item and can be associated with input
+<label for="">Text</label>  //'for' is an id for the label
+<form><fieldset></fieldset></form>  //groups related inputs and labels together
+<fieldset><legend>Text</legend></fieldset>  //gives context for the fieldset by using a caption
+
+Input attributes (textfields, radio buttons, and checkboxes):
+Textfields:
+<input type="">  //type can be used to create buttons, textfields, or allow files to be added
+<input type="text"> //creates a textfield for users to add in input
+<input type="" name=""> //name of the form control. Needed when submitting forms
+<input type="" placeholder="">  //gives users information on what to put into the textfield
+<input type="" required>  //forces users to fill in the textfield before submitting the form
+<input id="">  //identifies specific elements and must be unique from other id elements
+
+Radio button:
+<input type="radio"> text //creates a radio button and text to specify what the option is
+<input type="radio" name="">  //name makes it to where only one radio button can be selected if the radio buttons have the same name
+<input type="" name="" value=""> //value specifies which button data was chosen when the form is submitted
+
+Checkboxes:
+<input type="checkbox">  //creates a checkbox
+
+Links and their attributes
 <a href="">text can be added here</a>  //an anchor tag that will link to other pages or websites
 <a href="" target=""></a>              //target will allow the link to open to a new tab
 <a href=""> <img src=""> </a>          //images can also become links
@@ -53,3 +83,87 @@ Unordered lists
   <li></li>
   <li></li>
 </ul>
+
+
+Buttons:
+<button>text for button</button>  //creates a button
+<button type="submit"></button>  //specifies that it's a submnit button
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>name of website</title>
+  </head>
+  <body>
+    <main>
+      <h1></h1>
+      <section>
+        <h2></h2>
+        <p>Paragraph</p>
+        <p>Another paragraph with a <a href="">link</a></p>
+        <p><em>A paragraph with some text in italics</em></p>
+        <p><strong>A paragraph with some text in bold</strong></p>
+        <p></p>
+      </section>
+      <section>
+        <h2></h2>
+        <h3></h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ol>
+          <liL</li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section>
+        <figure>
+          <img src="" alt="">
+          <figcation>Caption for image</figcaption>
+        </figure>
+      </section>
+      <section>
+        <form action="">
+          <fieldset>
+            <legend>Title for the fieldset</legend>
+            <label>
+              <input id="" type="" name="" value=""> text to know what input is needed
+            </label>
+            <label>
+              <input type="text" name="" placeholder="input example"> Textbox
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Title for another set of related input</legend>
+            <input id="" type="radio" name="" value=">
+            <label for="">Text</label>
+            <input id="" type="radio" name="" value=">
+            <label for="">Text</label>
+          </fieldset>
+          <fieldset>
+            <legend></legend>
+            <label>
+              <input id="" type="checkbox" name="" value=">
+            </label>
+            <label>
+              <input id="" type="checkbox" name="" value=">
+            </label>
+            <label>
+              <input id="" type="checkbox" name="" value=">
+            </label>
+            <label>
+              <input id="" type="checkbox" name="" value=">
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>
