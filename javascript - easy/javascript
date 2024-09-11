@@ -1,1 +1,24 @@
+Making variables:
+Variables store values that can be accessed and used in code.
 
+let variableName = 'text', numbers, or arrays [];
+example of a string variable
+let name = 'John';  or let name = "John";
+
+example of a number variable:
+let oranges  = 5;
+
+example of an array:
+let myarray = [];
+
+To view output in the console, you have to use console.log.
+Example of console.log using previously stated variable name.
+console.log(name);
+>> John
+
+Variables can be reassigned so long as it had the word 'let' before it.
+Example:
+name = 'Jane';
+console.log(name);
+>> Jane
+*sine the variable 'name' has already been declared once, you do not have to use 'let'.
